@@ -1,0 +1,74 @@
+nav {
+
+    .menu-button {
+        padding: 6px 10px 5px 10px;
+        border-radius: 5px;
+    }
+
+    .side-bar-overlay {
+        display: flex;
+        justify-content: center;
+        
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0; right: 0; left: 0; bottom: 0;
+            background: #0000002d;
+
+            &.active {
+                display: block;
+            }
+        }
+        
+        .side-bar {
+            width: 250px;
+            z-index: 9;
+            left: 0;
+            transform: translate3d(-100%, 0, 0);
+            transition: .3s ease-out;
+
+            &.display {
+                transform: translate3d(0, 0, 0);
+            }
+
+            .author-info {
+                color: dark(light);
+
+                .author-profile {
+                    height: 100px;
+                    width: 100px;
+                }
+
+                .theme-button {
+                    right: 20px;
+                    top: 30px; 
+                    font-size: 26px;
+                }
+            }
+
+            .nav-item {
+                margin: 5px 0px;
+
+                .nav-link {
+                    padding-left: 15px;
+                    font-size: 18px;
+                    transition: .2s ease-out;
+                    color: dark(light);
+
+                    i {
+                        font-size: 20px;
+                        width: 35px;
+                        text-align: center;
+                    }
+
+                    &:hover {
+                        background: dark(lighten);
+                        border-left: 5px solid dark(light);
+                    }
+                }
+            }
+
+        }
+        
+    }
+}

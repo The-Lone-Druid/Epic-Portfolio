@@ -1,0 +1,12 @@
+$dark: (
+    lighten: #41464b,
+    light: #f6f6f6
+);
+
+@function dark($colorName) {
+    @return map-get($dark, $colorName);
+}
+
+.bg-dark-lighten {
+    background-color: dark(lighten) !important;
+}
