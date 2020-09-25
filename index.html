@@ -28,7 +28,7 @@
 
                     <div class="author-profile rounded-circle bg-dark"></div>
                     
-                    <div class="theme-button position-absolute">
+                    <div class="theme-button position-absolute" data-toggle="modal" data-target="#exampleModal">
 
                         <i class="fad fa-palette"></i>
 
@@ -50,7 +50,7 @@
 
                     <li class="nav-item active">
 
-                        <a href="index.html" class="nav-link">
+                        <a href="#home" class="nav-link">
 
                             <i class="fad fa-home mr-3"></i>
 
@@ -59,9 +59,10 @@
                         </a>
 
                     </li>
+
                     <li class="nav-item">
 
-                        <a href="index.html" class="nav-link">
+                        <a href="#about" class="nav-link">
 
                             <i class="fad fa-user-tie mr-3"></i>
 
@@ -73,7 +74,7 @@
 
                     <li class="nav-item">
 
-                        <a href="index.html" class="nav-link">
+                        <a href="#projects" class="nav-link">
 
                             <i class="fad fa-briefcase mr-3"></i>
 
@@ -85,7 +86,7 @@
 
                     <li class="nav-item">
 
-                        <a href="index.html" class="nav-link">
+                        <a href="#skills" class="nav-link">
 
                             <i class="fad fa-laptop-code mr-3"></i>
 
@@ -97,7 +98,7 @@
 
                     <li class="nav-item">
 
-                        <a href="index.html" class="nav-link">
+                        <a href="#services" class="nav-link">
 
                             <i class="fad fa-phone-laptop mr-3"></i>
 
@@ -109,7 +110,7 @@
 
                     <li class="nav-item mb-5">
 
-                        <a href="index.html" class="nav-link">
+                        <a href="#contact" class="nav-link">
 
                             <i class="fad fa-phone mr-3"></i>
 
@@ -126,36 +127,82 @@
         </div>
 
     </nav>
+
+    <!--Theme Palette-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content bg-dark text-light overflow-hidden">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title d-flex align-items-center" id="exampleModalLabel"><i class="fad fa-cog fa-2x mr-3"></i>Theme Palette</h5>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                    <i class="far fa-times text-white"></i>
+                    
+                </button>
+
+            </div>
+
+            <div class="modal-body bg-light">
+
+                <ul class="navbar-nav">
+
+                    <li value="bg-dark" class="nav-item theme bg-dark p-2 m-2 rounded d-flex align-items-center"><i class="fad fa-palette fa-2x mr-3"></i> Eternal Dark</li>
+
+                    <li value="bg-secondary" class="nav-item theme bg-secondary p-2 m-2 rounded d-flex align-items-center"><i class="fad fa-palette fa-2x mr-3"></i> Gunmetal Grey</li>
+
+                    <li value="bg-info" class="nav-item theme bg-info p-2 m-2 rounded d-flex align-items-center"><i class="fad fa-palette fa-2x mr-3"></i> Horizon Blue</li>
+
+                    <li value="bg-primary" class="nav-item theme bg-primary p-2 m-2 rounded d-flex align-items-center"><i class="fad fa-palette fa-2x mr-3"></i> Deep Ocean Blue</li>
+
+                    <li value="bg-success" class="nav-item theme bg-success p-2 m-2 rounded d-flex align-items-center"><i class="fad fa-palette fa-2x mr-3"></i> Natural Green</li>
+
+                    <li value="bg-danger" class="nav-item theme bg-danger p-2 m-2 rounded d-flex align-items-center"><i class="fad fa-palette fa-2x mr-3"></i> Cherry Blossom</li>
+
+                </ul>
+
+            </div>
+
+            </div>
+
+        </div>
     
-    <section class="text-white home vh-100 align-items-center d-flex">
+    </div>
+    
+    <section class="text-white home vh-100 align-items-center d-flex" id="home">
 
-        <div class="w-100">
+        <div class="w-100 font-rubik">
 
-            <h1 class="display-1 font-weight-normal pt-4 pb-4">Zahid Shaikh</h1>
+            <h1 class="font-weight-bold pb-4">Zahid Shaikh</h1>
             
             <h3 class="mb-0">Web Developer, Programmer & UX/ UI Designer</h3>
-
+            
             <div class="social-links rounded">
 
-               <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
 
-               <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
 
-               <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
 
-               <a href="#"><i class="fab fa-github"></i></a>
-
+                <a href="#"><i class="fab fa-github"></i></a>
+                
             </div>
 
             <div class="mt-2 mb-2">
 
-                <button class="btn btn-lg shadow-lg btn-light">
+                <button class="btn btn-lg shadow-lg btn-light font-weight-bold">
 
                     <i class="fad fa-project-diagram mr-3"></i>Projects
 
                 </button>
 
-                <button class="btn btn-lg shadow-lg btn-light">
+                <button class="btn btn-lg shadow-lg btn-light font-weight-bold">
 
                     <i class="fad fa-phone-laptop mr-3"></i>Services
 
@@ -163,7 +210,7 @@
 
             </div>
 
-            <div class="mt-4">
+            <div class="mt-5">
 
                 <i class="fad fa-angle-double-down fa-4x"></i>
 
@@ -173,12 +220,12 @@
         
     </section>
 
-    <div class="about p-5 bg-dark-lighten">
-        
-    </div>
+    <section id="about" class="about">
+        <h1 class="pt-5 display-4 text-center text-capitalize text-white font-weight-bold font-rubik">About Me</h1>
+    </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
