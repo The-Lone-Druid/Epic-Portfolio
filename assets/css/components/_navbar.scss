@@ -32,7 +32,7 @@ nav {
             }
 
             .author-info {
-                color: dark(light);
+                color: universal(light);
 
                 .author-profile {
                     height: 100px;
@@ -42,7 +42,7 @@ nav {
                 .theme-button {
                     right: 20px;
                     top: 30px; 
-                    font-size: 26px;
+                    font-size: 28px;
                 }
             }
 
@@ -53,7 +53,7 @@ nav {
                     padding-left: 15px;
                     font-size: 18px;
                     transition: .2s ease-out;
-                    color: dark(light);
+                    color: universal(light);
 
                     i {
                         font-size: 20px;
@@ -62,8 +62,8 @@ nav {
                     }
 
                     &:hover {
-                        background: dark(lighten);
-                        border-left: 5px solid dark(light);
+                        background: universal(lighten);
+                        border-left: 5px solid universal(light);
                     }
                 }
             }

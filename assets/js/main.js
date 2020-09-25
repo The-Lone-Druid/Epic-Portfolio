@@ -15,22 +15,34 @@ $(document).ready(function() {
         });
     });
 
+    //Smooth Scroll
     $("a").on('click', function(event) {
 
-        // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
-          // Prevent default anchor click behavior
           event.preventDefault();
     
-          // Store hash
           var hash = this.hash;
     
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 0, function(){
-          });
-        } // End if
-      });
+        });
+      }
+    });
+
+    //Theme Changer
+
+    var universalBg = "bg-dark bg-secondary bg-primary bg-info bg-warning bg-danger bg-success bg-dark-lighten bg-secondary-lighten bg-primary-lighten bg-info-lighten bg-warning-lighten bg-danger-lighten bg-success-lighten";
+    var currBg = "bg-dark";
+    var currBgLighten = "bg-dark-lighten";
+    
+    $('.theme').click(function() {
+      currBg = $(this).attr('value');      
+      currBgLighten = currBg + '-lighten';
+
+      $('.bg, .bg-lighten').removeClass(universalBg);
+      $('.bg').addClass(currBg);
+      $('.bg-lighten').addClass(currBgLighten);
+    })
+
 });
