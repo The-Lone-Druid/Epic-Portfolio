@@ -15,19 +15,20 @@ $(document).ready(function() {
         });
     });
 
+    
+    
     //Smooth Scroll
-    $("a").on('click', function(event) {
+    $('a').click(function(event) {
 
         if (this.hash !== "") {
           event.preventDefault();
-    
+          
           var hash = this.hash;
-    
+          
           $('html, body').animate({
             scrollTop: $(hash).offset().top
-          }, 0, function(){
-        });
-      }
+          });
+        }
     });
 
     //Theme Changer
@@ -45,4 +46,12 @@ $(document).ready(function() {
       $('.bg-lighten').addClass(currBgLighten);
     })
 
+    // Back to top button
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) {
+        $('.back-to-top').fadeIn('slow');
+      } else {
+        $('.back-to-top').fadeOut('slow');
+      }
+    });
 });

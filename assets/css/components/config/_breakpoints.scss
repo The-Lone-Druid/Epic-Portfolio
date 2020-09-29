@@ -1,0 +1,13 @@
+$breakpoints: (
+    laptopLarge: 1440px,
+    laptop: 1024px,
+    mobileLarge: 425px,
+    mobileMedium: 375px,
+    mobileSmall: 320px
+);
+
+@mixin responsive($point) {
+    @media (max-width: (map-get($breakpoints, $point))) {
+        @content
+    }
+}

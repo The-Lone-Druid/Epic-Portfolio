@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/loading.css@v2.0.0/dist/loading.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Zahid Shaikh Portfolio</title>
 </head>
 <body class="bg bg-dark">
 
+    <!--Navbar-->
     <nav class="fixed-top">
 
         <div class="menu-button float-right mr-2 mt-2 text-light bg bg-dark">
@@ -36,7 +38,7 @@
 
                     <div class="author-credentials">
 
-                        <h4 class="mt-3">Zahid Shaikh</h4>
+                        <h3 class="mt-3">Zahid Shaikh</h3>
 
                         <p class="m-0 pb-3">TheLoneDruid56@gmail.com</p>
 
@@ -74,18 +76,6 @@
 
                     <li class="nav-item">
 
-                        <a href="#projects" class="nav-link">
-
-                            <i class="fad fa-briefcase mr-3"></i>
-
-                            Projects
-
-                        </a>
-
-                    </li>
-
-                    <li class="nav-item">
-
                         <a href="#skills" class="nav-link">
 
                             <i class="fad fa-laptop-code mr-3"></i>
@@ -103,6 +93,18 @@
                             <i class="fad fa-phone-laptop mr-3"></i>
 
                             Services
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a href="#projects" class="nav-link">
+
+                            <i class="fad fa-briefcase mr-3"></i>
+
+                            Projects
 
                         </a>
 
@@ -136,7 +138,7 @@
 
             <div class="modal-content bg bg-dark text-light overflow-hidden">
 
-            <div class="modal-header">
+            <div class="modal-header d-flex align-items-center">
 
                 <h5 class="modal-title d-flex align-items-center" id="exampleModalLabel"><i class="fad fa-cog fa-2x mr-3"></i>Theme Palette</h5>
 
@@ -181,41 +183,47 @@
 
         <div class="w-100 font-rubik">
 
-            <h1 class="font-weight-bold">Zahid Shaikh</h1>
+            <h1 class="font-weight-bold text-shadow">Zahid Shaikh</h1>
             
-            <h3 class="mb-0">Web Developer, Programmer & UX/ UI Designer</h3>
+            <h3 class="mb-0 text-shadow">Web Developer, Programmer & UX/ UI Designer</h3>
             
             <div class="social-links rounded d-flex align-items-center justify-content-around">
 
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-shadow"><i class="fab fa-instagram"></i></a>
 
-                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-shadow"><i class="fab fa-facebook"></i></a>
 
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-shadow"><i class="fab fa-linkedin"></i></a>
 
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-shadow"><i class="fab fa-github"></i></a>
                 
             </div>
 
             <div class="mt-2 mb-2">
 
-                <button class="btn btn-lg shadow-lg btn-light font-weight-normal">
+                <a href="#projects">
+                    <button class="btn btn-lg shadow-lg bg bg-dark text-light font-weight-normal">
+    
+                        <i class="fad fa-project-diagram mr-3"></i>Projects
+    
+                    </button>
+                </a>
 
-                    <i class="fad fa-project-diagram mr-3"></i>Projects
-
-                </button>
-
-                <button class="btn btn-lg shadow-lg btn-light font-weight-normal">
-
-                    <i class="fad fa-phone-laptop mr-3"></i>Services
-
-                </button>
+                <a href="#services">
+                    <button class="btn btn-lg shadow-lg bg bg-dark text-light font-weight-normal">
+    
+                        <i class="fad fa-phone-laptop mr-3"></i>Services
+    
+                    </button>
+                </a>
 
             </div>
 
-            <div class="mt-5">
+            <div class="mt-md-5 mt-2">
 
-                <i class="fad fa-angle-double-down fa-4x"></i>
+                <a href="#about" class="text-white text-shadow">
+                    <i class="fad fa-angle-double-down fa-4x ld ld-dim"></i>
+                </a>
 
             </div>
 
@@ -223,14 +231,356 @@
         
     </section>
 
-    <section id="about" class="about">
-        <h1 class="pt-5 display-4 text-center text-capitalize text-white font-weight-bold font-rubik">About Me</h1>
+    <!--About Section-->
+    <section id="about" class="about font-rubik text-white vh-100 vh-sm-0 d-flex flex-column justify-content-center">
+
+        <h1 class="pt-5 text-shadow display-4 text-center text-capitalize font-weight-bold">About</h1>
+        
+        <article class="container mt-5 bg-lighten bg-dark-lighten rounded p-md-5 p-3">
+
+            <span class="font-size-22 font-montserrat">
+
+                I'm a professional <span class="font-weight-bold">Front-End Developer, Programmer & UX/UI Designer</span>
+                I've worked on few projects which includes <span class="font-weight-bold">
+                Portfolio's, E-Commerce
+                Websites, Commercial Websites, Product Websites, Management Systems, 
+                Website Designs & more.</span> Currently I'm pursuing B.C.A (Science) at <span class="font-weight-bold">
+                Abeda Inamdar Senior College</span>. Do check my <span class="font-weight-bold">Projects</span> &
+                <span class="font-weight-bold">Services</span> and Feel free to Contact or Quote if you need 
+                your own multi-device personal website.
+
+            </span>
+
+        </article>
+
+        <div class="author-info d-flex align-items-center">
+
+            <div class="info d-flex flex-column text-center mt-5">
+                <i class="fad fa-envelope fa-4x"></i>
+                <p class="mt-2 mb-2">Email</p>
+                <h5>TheLoneDruid56@gmail.com</h5>
+            </div>
+
+            <div class="info d-flex flex-column text-center mt-5">
+                <i class="fad fa-phone-square fa-4x"></i>
+                <p class="mt-2 mb-2">Phone</p>
+                <h5>+91 8806544670</h5>
+            </div>
+            
+            <div class="info d-flex flex-column text-center mt-5">
+                <i class="fad fa-map-marked-alt fa-4x"></i>
+                <p class="mt-2 mb-2">Location</p>
+                <h5>India, Maharahstra</h5>
+            </div>
+
+        </div>
+
     </section>
 
+    <!--Skills Section-->
+    <section id="skills" class="skills font-rubik text-white bg-lighten bg-dark-lighten">
 
+        <h1 class="pt-5 text-shadow display-4 text-center text-capitalize font-weight-bold">skills</h1>
+
+        <div class="row mt-5 pb-5">
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-html5 fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        HTML
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-css3-alt fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        CSS
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-js-square fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        JavaScript
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-php fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        PHP
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-figma fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        Figma
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-sass fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        SASS
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-aws fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        Amazon Web Services
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-angular fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        Angular
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-react fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        React
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-node-js fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        Node Js
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-github fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        GitHub
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 m-auto">
+                
+                <div class="skill p-5 rounded bg bg-dark d-flex flex-column text-center overflow-hidden">
+
+                    <i class="fab fa-bootstrap fa-4x"></i>
+
+                    <div class="name pt-2 mt-1">
+
+                        Bootstrap
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Services Section-->
+    <section id="services" class="services font-rubik text-white">
+
+        <h1 class="pt-5 text-shadow display-4 text-center text-capitalize font-weight-bold">Services</h1>
+
+        <div class="row mt-5 pb-5 text-center">
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="service rounded bg-lighten bg-dark-lighten">
+
+                    <i class="fad fa-pencil-paintbrush fa-4x"></i>
+                    <h4 class="mt-4 mb-3">Web Design</h4>
+                    <p>  
+                        I use an amazing tool known as Figma using which my Clients can get an overview of
+                        how the actual website will look like & how it will Interact with the user.
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="service rounded bg-lighten bg-dark-lighten">
+
+                    <i class="fab fa-html5 fa-4x"></i>
+                    <h4 class="mt-4 mb-3">Prototype/ PSD to HTML</h4>
+                    <p>
+                        I can even convert a Prototype or a PSD into HTML document. Also make it responsive
+                        using a best technology known as SASS. Design will be as same as Prototype or PSD.  
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="service rounded bg-lighten bg-dark-lighten">
+
+                    <i class="fad fa-laptop-code fa-4x"></i>
+                    <h4 class="mt-4 mb-3">Clean & Valid Code</h4>
+                    <p>
+                        Code written will be 100% Clean & Valid, It can be understood by other developers if
+                        required. I always keep two things in mind and that are Reusability & Maintainability
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="service rounded bg-lighten bg-dark-lighten">
+
+                    <i class="fad fa-cogs fa-4x"></i>
+                    <h4 class="mt-4 mb-3">Easy to Customize</h4>
+                    <p>  
+                        I develope websites in such a way that they can be customized according to the clients
+                        requirements. Also make it easier if new feature is to be added.
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="service rounded bg-lighten bg-dark-lighten">
+
+                    <i class="fad fa-phone-laptop fa-4x"></i>
+                    <h4 class="mt-4 mb-3">Multi-Device Website</h4>
+                    <p>
+                        Websites that I design are 100% Responsive & can adjust themselves according to the
+                        Viewport size. i.e, They can run on Mobiles, Tablets, Desktops, Laptops, etc.
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="col-xl-4 col-lg-6">
+
+                <div class="service rounded bg-lighten bg-dark-lighten">
+
+                    <i class="fab fa-github fa-4x"></i>
+                    <h4 class="mt-4 mb-3">Version Control</h4>
+                    <p>
+                        To keep my website fresh & updated i use GitHub's Version Control. Using this powerful
+                        Tool It's possible to control the version of my project and update it accordingly.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Scroll To Top Button-->
+    <a href="#home" class="back-to-top bg bg-dark" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

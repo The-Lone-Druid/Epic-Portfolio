@@ -2,7 +2,6 @@
     background: linear-gradient(-90deg, #0000000e, #00000079), url('../img/undraw_programming_2svr.svg') center center no-repeat;    
     background-size: cover;
     background-attachment: fixed;
-    text-shadow: 0px 0px 14px #00000071;
 
     background: linear-gradient(-90deg, #0000001e, #0000001e), url('../img/undraw_programming_2svr.svg') center center no-repeat;
     text-align: center;
@@ -19,7 +18,7 @@
     .social-links {
         font-size: 38px;
         margin: 25px auto 25px auto;
-        background: #ffffff3b;
+        background: #00000077;
         width: 340px;
         
         @include responsive(mobileLarge) {

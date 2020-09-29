@@ -1,0 +1,43 @@
+$universal: (
+    dark: #41464b,
+    secondary: #787e83,
+    primary: #338ef0,
+    info: #2b98a8,
+    warning: #fdd047,
+    success: #48ce67,
+    danger: #e64757,
+    light: #f6f6f6,
+    shadow: #ffffff2a
+);
+
+@function universal($colorName) {
+    @return map-get($universal, $colorName);
+}
+
+.bg-dark-lighten {
+    background-color: universal(dark) !important;
+}
+
+.bg-secondary-lighten {
+    background-color: universal(secondary) !important;
+}
+
+.bg-primary-lighten {
+    background-color: universal(primary) !important;
+}
+
+.bg-info-lighten {
+    background-color: universal(info) !important;
+}
+
+.bg-warning-lighten {
+    background-color: universal(warning) !important;
+}
+
+.bg-success-lighten {
+    background-color: universal(success) !important;
+}
+
+.bg-danger-lighten {
+    background-color: universal(danger) !important;
+}

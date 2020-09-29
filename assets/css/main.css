@@ -1,6 +1,6 @@
 /*
     Author: Zahid Shaikh
-    Template: Created with SASS
+    Template: Custom SASS Template
 */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
@@ -18,11 +18,52 @@
 
 body, html {
   scroll-behavior: smooth;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
 }
 
 body {
   overflow-x: hidden;
-  height: 10000px;
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  color: universal(light);
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+  display: none;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .vh-sm-0 {
+    height: auto !important;
+    padding: 20px 0px 40px 0px;
+  }
+}
+
+.bg, .bg-lighten {
+  transition: background .2s ease-out;
 }
 
 .bg-dark-lighten {
@@ -63,6 +104,54 @@ body {
 
 .font-montserrat {
   font-family: 'Montserrat', sans-serif;
+}
+
+.font-size-16 {
+  font-size: 16px !important;
+}
+
+.font-size-18 {
+  font-size: 18px !important;
+}
+
+.font-size-20 {
+  font-size: 20px !important;
+}
+
+.font-size-22 {
+  font-size: 22px !important;
+}
+
+.font-size-24 {
+  font-size: 24px !important;
+}
+
+.font-size-26 {
+  font-size: 26px !important;
+}
+
+.font-size-28 {
+  font-size: 28px !important;
+}
+
+.font-size-30 {
+  font-size: 30px !important;
+}
+
+.font-size-32 {
+  font-size: 32px !important;
+}
+
+.font-size-34 {
+  font-size: 34px !important;
+}
+
+.font-size-36 {
+  font-size: 36px !important;
+}
+
+.text-shadow {
+  text-shadow: 0px 13px 14px #00000052 !important;
 }
 
 nav .menu-button {
@@ -134,6 +223,7 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link i {
 }
 
 nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
+  background: #ffffff2a;
   border-left: 5px solid #f6f6f6;
 }
 
@@ -141,7 +231,6 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
   background: linear-gradient(-90deg, #0000000e, #00000079), url("../img/undraw_programming_2svr.svg") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  text-shadow: 0px 0px 14px #00000071;
   background: linear-gradient(-90deg, #0000001e, #0000001e), url("../img/undraw_programming_2svr.svg") center center no-repeat;
   text-align: center;
   padding: 10px !important;
@@ -160,7 +249,7 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
 .home .social-links {
   font-size: 38px;
   margin: 25px auto 25px auto;
-  background: #ffffff3b;
+  background: #00000077;
   width: 340px;
 }
 
@@ -187,4 +276,55 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
     display: block;
     margin: 20px auto;
   }
+}
+
+.about .author-info {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .author-info .info {
+  width: 300px;
+  transition: .3s ease-out;
+}
+
+.about .author-info .info:hover {
+  text-shadow: 0px 14px 14px #0000006b;
+  transform: scale(1.1);
+}
+
+.skills {
+  position: relative;
+}
+
+.skills .skill {
+  width: 280px;
+  margin: 20px auto;
+  transition: all .3s ease-out;
+  position: relative;
+  cursor: pointer;
+}
+
+.skills .skill .name {
+  font-size: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.skills .skill:hover {
+  box-shadow: -12px 12px 8px #0000001a;
+}
+
+.skills .skill:hover .name {
+  transition: .3s ease-out;
+  font-size: 16px;
+}
+
+.services .service {
+  width: 380px;
+  margin: 20px auto;
+  clear: both;
+  padding: 15px;
 }
