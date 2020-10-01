@@ -37,6 +37,11 @@ nav {
                 .author-profile {
                     height: 100px;
                     width: 100px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                    }
                 }
 
                 .theme-button {

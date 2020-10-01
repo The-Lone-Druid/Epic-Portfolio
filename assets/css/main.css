@@ -203,6 +203,11 @@ nav .side-bar-overlay .side-bar .author-info {
 nav .side-bar-overlay .side-bar .author-info .author-profile {
   height: 100px;
   width: 100px;
+  overflow: hidden;
+}
+
+nav .side-bar-overlay .side-bar .author-info .author-profile img {
+  width: 100%;
 }
 
 nav .side-bar-overlay .side-bar .author-info .theme-button {
