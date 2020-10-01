@@ -6,6 +6,8 @@
         clear: both;
         padding: 15px;
 
-        
+        @include responsive(mobileLarge) {
+            width: 100%;
+        }
     }
 }

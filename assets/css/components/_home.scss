@@ -6,19 +6,26 @@
     background: linear-gradient(-90deg, #0000001e, #0000001e), url('../img/undraw_programming_2svr.svg') center center no-repeat;
     text-align: center;
     padding: 10px !important;
+    padding-top: 0px !important;
 
     h1 {
         font-size: 5rem;
         
         @include responsive(mobileLarge) {
-            font-size: 3.7rem !important;
+            font-size: 3.3rem !important;
+        }
+    }
+
+    h3 {
+        @include responsive(mobileLarge) {
+            font-size: 1.4rem !important;
         }
     }
 
     .social-links {
         font-size: 38px;
         margin: 25px auto 25px auto;
-        background: #00000077;
+        background: #00000050;
         width: 340px;
         
         @include responsive(mobileLarge) {
@@ -41,7 +48,6 @@
     button:nth-child(1), button:nth-child(2) {
 
         @include responsive(mobileLarge) {
-            display: block;
             margin: 20px auto;
         }
     }

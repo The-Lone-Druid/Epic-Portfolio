@@ -1,0 +1,10 @@
+.contact-form {
+
+    input::placeholder, textarea::placeholder {
+        color: #ffffff2e;
+    }
+
+    @include responsive(tablet) {
+        width: auto !important;
+    }
+}

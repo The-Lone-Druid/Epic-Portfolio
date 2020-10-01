@@ -7,9 +7,9 @@
         .info {
             width: 300px;
             transition: .3s ease-out;
+            text-shadow: 0px 14px 14px #0000006b;
 
             &:hover {
-                text-shadow: 0px 14px 14px #0000006b;
                 transform: scale(1.1);
             }
         }

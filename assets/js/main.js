@@ -3,15 +3,15 @@ $(document).ready(function() {
     //Side Menu 
     $('.menu-button').click(function() {
         $('.side-bar').toggleClass('display');
-        $('.overlay').toggleClass('active');
+        $('.overlay').fadeIn('active');
         $('.menu').toggleClass('fa-times');
         $('body').css('overflow-y','hidden');
         
         $('.overlay , .nav-item').click(function() {
             $('.side-bar').removeClass('display');
-            $('.overlay').removeClass('active');
+            $('.overlay').fadeOut('active');
             $('.menu').removeClass('fa-times');
-            $('body').css('overflow-y','scroll');
+            $('body').css('overflow-y','auto');
         });
     });
 
@@ -25,10 +25,11 @@ $(document).ready(function() {
           
           var hash = this.hash;
           
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          });
+         $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 0);
         }
+
     });
 
     //Theme Changer
@@ -47,11 +48,15 @@ $(document).ready(function() {
     })
 
     // Back to top button
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 100) {
-        $('.back-to-top').fadeIn('slow');
-      } else {
-        $('.back-to-top').fadeOut('slow');
-      }
+    var scrollButton = $('#scroll-top');
+
+    $(window).scroll(function(){
+      $(this).scrollTop() >= 600 ? scrollButton.show() : scrollButton.hide();
+    });
+
+    scrollButton.click(function(){
+      $('html,body').animate({
+        scrollTop: 0
+      }, 600 );
     });
 });

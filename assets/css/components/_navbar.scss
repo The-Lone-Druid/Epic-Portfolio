@@ -13,7 +13,7 @@ nav {
             display: none;
             position: fixed;
             top: 0; right: 0; left: 0; bottom: 0;
-            background: #0000002d;
+            background: #0000005d;
 
             &.active {
                 display: block;
@@ -21,7 +21,7 @@ nav {
         }
         
         .side-bar {
-            width: 250px;
+            width: 280px;
             z-index: 9;
             left: 0;
             transform: translate3d(-100%, 0, 0);

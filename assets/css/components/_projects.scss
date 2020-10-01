@@ -1,0 +1,25 @@
+.projects {
+    
+    .project {
+
+        .card-img-top {
+            height: 180px;
+            width: 100%;
+
+            img {
+                width: inherit;
+                height: inherit;
+                position: absolute;
+            }
+        }
+
+        .card {
+            overflow: hidden;
+            transition: .2s ease-out;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+}

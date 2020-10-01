@@ -27,26 +27,24 @@ body {
   width: 100% !important;
 }
 
-.back-to-top {
+#scroll-top {
   position: fixed;
-  display: none;
-  color: universal(light);
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  line-height: 1;
-  font-size: 16px;
-  border-radius: 50%;
-  right: 15px;
-  bottom: 15px;
-  transition: background 0.5s;
-  z-index: 11;
+  bottom: 1em;
+  right: 1em;
+  cursor: pointer;
+  z-index: 999;
   display: none;
 }
 
-.back-to-top i {
-  padding-top: 12px;
-  color: #fff;
+#scroll-top i {
+  font-size: 28px;
+  color: white;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
 }
 
 @media (max-width: 768px) {
@@ -63,7 +61,7 @@ body {
 }
 
 .bg, .bg-lighten {
-  transition: background .2s ease-out;
+  transition: background 0.1s ease-out;
 }
 
 .bg-dark-lighten {
@@ -154,6 +152,14 @@ body {
   text-shadow: 0px 13px 14px #00000052 !important;
 }
 
+.box-shadow {
+  box-shadow: 0px 0px 14px #00000052 !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
 nav .menu-button {
   padding: 6px 10px 5px 10px;
   border-radius: 5px;
@@ -171,7 +177,7 @@ nav .side-bar-overlay .overlay {
   right: 0;
   left: 0;
   bottom: 0;
-  background: #0000002d;
+  background: #0000005d;
 }
 
 nav .side-bar-overlay .overlay.active {
@@ -179,7 +185,7 @@ nav .side-bar-overlay .overlay.active {
 }
 
 nav .side-bar-overlay .side-bar {
-  width: 250px;
+  width: 280px;
   z-index: 9;
   left: 0;
   transform: translate3d(-100%, 0, 0);
@@ -234,6 +240,7 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
   background: linear-gradient(-90deg, #0000001e, #0000001e), url("../img/undraw_programming_2svr.svg") center center no-repeat;
   text-align: center;
   padding: 10px !important;
+  padding-top: 0px !important;
 }
 
 .home h1 {
@@ -242,14 +249,20 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
 
 @media (max-width: 425px) {
   .home h1 {
-    font-size: 3.7rem !important;
+    font-size: 3.3rem !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .home h3 {
+    font-size: 1.4rem !important;
   }
 }
 
 .home .social-links {
   font-size: 38px;
   margin: 25px auto 25px auto;
-  background: #00000077;
+  background: #00000050;
   width: 340px;
 }
 
@@ -273,7 +286,6 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
 
 @media (max-width: 425px) {
   .home button:nth-child(1), .home button:nth-child(2) {
-    display: block;
     margin: 20px auto;
   }
 }
@@ -286,10 +298,10 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
 .about .author-info .info {
   width: 300px;
   transition: .3s ease-out;
+  text-shadow: 0px 14px 14px #0000006b;
 }
 
 .about .author-info .info:hover {
-  text-shadow: 0px 14px 14px #0000006b;
   transform: scale(1.1);
 }
 
@@ -300,7 +312,7 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
 .skills .skill {
   width: 280px;
   margin: 20px auto;
-  transition: all .3s ease-out;
+  transition: all .1s ease-out;
   position: relative;
   cursor: pointer;
 }
@@ -311,14 +323,15 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
   bottom: 10px;
   left: 0;
   right: 0;
+  transition: .1s ease-out;
 }
 
 .skills .skill:hover {
-  box-shadow: -12px 12px 8px #0000001a;
+  box-shadow: 0px 18px 20px #0000001a;
+  transform: scale(1.1);
 }
 
 .skills .skill:hover .name {
-  transition: .3s ease-out;
   font-size: 16px;
 }
 
@@ -327,4 +340,62 @@ nav .side-bar-overlay .side-bar .nav-item .nav-link:hover {
   margin: 20px auto;
   clear: both;
   padding: 15px;
+}
+
+@media (max-width: 425px) {
+  .services .service {
+    width: 100%;
+  }
+}
+
+.projects .project .card-img-top {
+  height: 180px;
+  width: 100%;
+}
+
+.projects .project .card-img-top img {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+.projects .project .card {
+  overflow: hidden;
+  transition: .2s ease-out;
+}
+
+.projects .project .card:hover {
+  transform: scale(1.02);
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+  color: #ffffff2e;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: auto !important;
+  }
+}
+
+.social-links .nav-item {
+  height: 65px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .2s ease-out;
+  font-size: 36px;
+}
+
+.social-links .nav-item .nav-link {
+  color: white;
+}
+
+.social-links .nav-item:hover {
+  background: white !important;
+}
+
+.social-links .nav-item:hover .nav-link {
+  color: black !important;
 }
