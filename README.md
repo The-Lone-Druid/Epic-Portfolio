@@ -1,3 +1,3 @@
 #Epic Portfolio Theme
 
-https://zahidshaikh.pro
+https://zahidshaikh.site
