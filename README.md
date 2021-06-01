@@ -1,3 +1,3 @@
 #Epic Portfolio Theme
 
-https://zahidshaikh.site
+https://the-lone-druid.github.io/Epic-Portfolio
